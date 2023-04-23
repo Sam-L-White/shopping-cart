@@ -8,49 +8,49 @@ const Shop = () => {
         {
             name: "Item 1",
             image: "/images/starfish1.jpg",
-            price: "£5"
+            price: "£5.00"
         },
         {
             name: "Item 2",
             image: "/images/starfish1.jpg",
-            price: "£5"
+            price: "£5.00"
         },
         {
             name: "Item 3",
             image: "/images/starfish1.jpg",
-            price: "£5"
+            price: "£5.00"
         },
         {
             name: "Item 4",
             image: "/images/starfish1.jpg",
-            price: "£5"
+            price: "£5.00"
         },
         {
             name: "Item 5",
             image: "/images/starfish1.jpg",
-            price: "£5"
+            price: "£5.00"
         },
         {
             name: "Item 6",
             image: "/images/starfish1.jpg",
-            price: "£5"
+            price: "£5.00"
         },
         {
             name: "Item 7",
             image: "/images/starfish1.jpg",
-            price: "£5"
+            price: "£5.00"
         },
         {
             name: "Item 8",
             image: "/images/starfish1.jpg",
-            price: "£5"
+            price: "£5.00"
         }
     ])
 
     return(
-        <div>
+        <div className="flex flex-col">
             <Navbar />
-            <div className="grid grid-cols-4 gap-40 ml-64 mr-64 mt-32">
+            <div className="grid grid-cols-4 gap-24 ml-64 mr-64 mt-48">
                 {items.map(item => {
                     return <Item name={item.name} image={item.image} price={item.price}/>
                 })}
