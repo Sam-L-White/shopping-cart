@@ -6,7 +6,7 @@ const Item = (props) => {
             <img className="h-auto rounded-2xl drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]" src={props.image} alt="" />
             <div className="text-2xl font-bold drop-shadow-none">{props.name}</div>
             <div className="text-2xl drop-shadow-none">{props.price}</div>
-            <button className="bg-cambridge text-black p-5 w-full rounded-lg hover:bg-cambridge/75">Add to Cart</button>
+            <button className="bg-cambridge text-black p-5 w-full rounded-lg hover:bg-cambridge/75" onClick={() => props.addToBasket(props)}>Add to Cart</button>
         </div>
     )
 }

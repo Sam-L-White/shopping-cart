@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import {Navbar} from "../components/Navbar"
 import { Item } from "../components/Item";
 
-const Shop = () => {
+const Shop = (props) => {
 
     const [items, setItems] = useState([
         {
@@ -52,10 +52,9 @@ const Shop = () => {
             <Navbar />
             <div className="grid grid-cols-4 gap-24 ml-64 mr-64 mt-48">
                 {items.map(item => {
-                    return <Item name={item.name} image={item.image} price={item.price}/>
+                    return <Item name={item.name} image={item.image} price={item.price} addToBasket={props.addToBasket}/>
                 })}
             </div>
-            
         </div>
     )
 }
