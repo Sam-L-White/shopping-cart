@@ -31,6 +31,9 @@ const RouteSwitch = () => {
         } else {
           let newArray = basket.concat(item)
           setBasket(newArray)
+          setBasket(prevState => {
+            return prevState.map(prevStateItem => (prevStateItem.name == item.name) ? {...prevStateItem, amount: (prevStateItem.amount + 1)} : prevStateItem)
+          });
           window.localStorage.setItem('basket', JSON.stringify(basket))
         }
       }

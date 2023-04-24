@@ -16,7 +16,11 @@ const Navbar = (props) => {
             <h1 className="font-bold text-6xl ml-64">The Starfish Shop</h1>
             <div className="ml-auto text-2xl cursor-pointer" role="button"><a href="/">Home</a></div>
             <div className="text-2xl cursor-pointer" role="button"><a href="/shop">Shop</a></div>
-            <a href="/basket"><p>{basketAmount}</p><FontAwesomeIcon className="mr-64 text-2xl cursor-pointer" role="button" icon={faCartShopping} /></a>
+            <div className="flex flex-row gap-3">
+                <p className="text-xl">{basketAmount}</p>
+                <a href="/basket"><FontAwesomeIcon className="mr-64 text-2xl cursor-pointer" role="button" icon={faCartShopping} /></a>
+            </div>
+            
         </div>
     )
 }

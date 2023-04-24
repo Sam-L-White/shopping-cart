@@ -8,49 +8,49 @@ const Shop = (props) => {
         {
             name: "Item 1",
             image: "/images/starfish1.jpg",
-            price: "£5.00",
+            price: "5.00",
             amount: 0
         },
         {
             name: "Item 2",
             image: "/images/starfish1.jpg",
-            price: "£5.00",
+            price: "5.00",
             amount: 0
         },
         {
             name: "Item 3",
             image: "/images/starfish1.jpg",
-            price: "£5.00",
+            price: "5.00",
             amount: 0
         },
         {
             name: "Item 4",
             image: "/images/starfish1.jpg",
-            price: "£5.00",
+            price: "5.00",
             amount: 0
         },
         {
             name: "Item 5",
             image: "/images/starfish1.jpg",
-            price: "£5.00",
+            price: "5.00",
             amount: 0
         },
         {
             name: "Item 6",
             image: "/images/starfish1.jpg",
-            price: "£5.00",
+            price: "5.00",
             amount: 0
         },
         {
             name: "Item 7",
             image: "/images/starfish1.jpg",
-            price: "£5.00",
+            price: "5.00",
             amount: 0
         },
         {
             name: "Item 8",
             image: "/images/starfish1.jpg",
-            price: "£5.00",
+            price: "5.00",
             amount: 0
         }
     ])
