@@ -3,12 +3,11 @@ import {Navbar} from "../components/Navbar"
 
 const Basket = (props) => {
     return(
-        <div>
-            <Navbar />
-            <div className="flex flex-col items-center justify-center">
-                {console.log(props.basket)}
+        <div className="flex flex-col gap-10">
+            <Navbar basket={props.basket}/>
+            <div className="mt-48">
                 {props.basket.map(item => {
-                    return <div>{item.name}</div>
+                    return (<div className=" bg-saffron h-64 text-charcoal w-64 text-xl text-end">{item.name}</div>)
                 })}
             </div>
         </div>
