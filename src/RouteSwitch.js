@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Basket from "./pages/Basket";
@@ -40,13 +40,13 @@ const RouteSwitch = () => {
     }
   
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home addToBasket={addToBasket} basket={JSON.parse(window.localStorage.getItem('basket'))}/>}/>
         <Route path="/shop" element={<Shop addToBasket={addToBasket} basket={JSON.parse(window.localStorage.getItem('basket'))}/>}/>
         <Route path="/basket" element={<Basket basket={JSON.parse(window.localStorage.getItem('basket'))}/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
